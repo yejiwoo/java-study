@@ -1,0 +1,13 @@
+package intro.ex01;
+
+public class PersonExample {
+
+	public static void main(String[] args) {
+		
+		Person myPerson1=new Person();
+		Person myPerson2=new Person("우예지","010-0101-1010",3, "wyj9088@nav.com");
+//		Person myPerson3=new Person("신상현"); // 컴파일 오류
+		
+	}
+
+}

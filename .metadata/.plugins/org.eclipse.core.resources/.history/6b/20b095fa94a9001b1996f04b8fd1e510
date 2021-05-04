@@ -1,0 +1,10 @@
+package question_check.q3;
+
+public class SoundableExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

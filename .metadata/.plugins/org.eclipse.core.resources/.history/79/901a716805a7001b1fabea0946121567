@@ -1,0 +1,95 @@
+package sec01;
+
+public class VariableExample {
+
+	public static void VariableScopeExample(){
+		int v1=15;
+		if(v1>10) {
+			int v2=v1-10;
+		}
+		// int v3=v1+v2; // v2사용 할 수 없기 때문에 컴파일 에러
+		System.out.println("v1:"+v1);
+	}
+	
+	/**
+	 * 복습!!!
+	 */
+	public static void GarbageValueExample() {
+		byte var1=125;
+		int var2 = 125;
+		for(int i=0;i<5;i++) {
+			var1++; var2++;
+			System.out.println("var1: "+var1+", var2: "+var2);
+		}
+	}
+	
+	/**
+	 * 복습!!!
+	 */
+	public static void floatDoublueExample() {
+		
+		//실수값 저장
+		double var1=3.14;
+		// float var2=3.14;  // 컴파일 에러(Type mismatch)
+		float var3=3.14F;
+		
+		//정밀도 테스트
+		double var4=0.1234567890123456789;
+		float var5=0.1234567890123456789F;
+		
+		System.out.println("var1: "+var1);
+		System.out.println("var3: "+var3);
+		System.out.println("var4: "+var4);  // var4, var5 왜 차이나???
+		System.out.println("var5: "+var5);
+		
+		//e사용하기
+		int var6=300000;
+		double var7=3e6;
+		float var8=3e6F;
+		double var9=2e-3;
+		
+		System.out.println("var6: "+var6);
+		System.out.println("var7: "+var7);
+		System.out.println("var8: "+var8);
+		System.out.println("var9: "+var9);
+	}
+	
+	static void booleanExample() {
+		boolean stop=true;
+		if(stop) {
+			System.out.println("중지합니다.");
+		}else {
+			System.out.println("시작합니다.");
+		}
+	}
+	public static void main(String[] args) {
+		
+		//10을 변수 value의 초기값으로 저장
+		int value=10;
+		
+		//변수 value 값을 읽고 10을 더하는 산술 연산을 수행
+		//연산의 결과값을 변수 result의 초기값으로 저장
+		int result=value+10;
+		
+		//변수 result값을 읽고 콘솔에 출력
+//		System.out.println(result);
+//		
+//		VariableScopeExample();
+//		GarbageValueExample();
+//		floatDoublueExample();
+		booleanExample();
+		
+		int a=10;
+		int b=3;
+		int c=a/b;
+		double d=a/b; // int에 산술연산자로 연산하면 반환값 무조건 int
+		double e=(double)a/b;
+		System.out.println("c: "+(double)c);
+		System.out.println("d: "+d);
+		System.out.println("e: "+e);
+
+		
+	}
+
+}
+

@@ -1,0 +1,9 @@
+package sec07.pkg;
+
+public class Child02 {
+	private int childfield02=20;
+	
+	public void methodChild02() {
+		System.out.println("child02에 있는 메서드");
+	}
+}

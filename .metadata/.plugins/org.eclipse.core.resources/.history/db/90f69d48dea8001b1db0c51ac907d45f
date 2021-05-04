@@ -1,0 +1,14 @@
+package sec07.pkg;
+
+public class MyExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Child01 ch01=new Child01();
+		Child02 ch02=new Child02();
+		
+		ch01.myMethod();
+		ch02.myMethod();
+	}
+
+}

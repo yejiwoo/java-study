@@ -1,0 +1,12 @@
+package sec06.p666;
+
+import java.util.Arrays;
+
+public class WildCardExample {
+	public static void registerCourse(Course<?> course) {	// 모든 과정
+		System.out.println(course.getName()+" 수강생: " +
+				Arrays.toString(course.getStudents()));
+	}
+	
+	public static void registerCourse
+}

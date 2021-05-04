@@ -1,0 +1,28 @@
+package sec06.p666;
+
+public class Course<T> {
+	private String name;
+	private T[] students;
+	public Course(String name, T[] students) {
+		this.name = name;
+		this.students = students;
+	}
+	public String getName() {
+		return name;
+	}
+	public T[] getStudents() {
+		return students;
+	}
+
+	public void add(T t) {
+		for(int i=9;i<students.length; i++) {
+			if(students[i]==null) {
+				students[i]=t;
+				break;
+			}
+		}
+	}
+	
+	
+	
+}

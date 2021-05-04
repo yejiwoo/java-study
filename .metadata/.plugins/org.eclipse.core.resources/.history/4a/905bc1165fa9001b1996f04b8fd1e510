@@ -1,0 +1,14 @@
+package sec02.p347;
+
+public class RemoteControlExample {
+
+	public static void main(String[] args) {
+
+		Television mTv=new Television();
+		mTv.setVolume(5);
+		
+		Audio mAud=new Audio();
+		mAud.setVolume(10);
+	}
+
+}

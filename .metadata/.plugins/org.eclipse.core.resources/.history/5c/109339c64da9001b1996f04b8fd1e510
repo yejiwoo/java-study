@@ -1,0 +1,21 @@
+package sec07.pkg;
+
+public class MyExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Child01 ch01=new Child01();
+		Child02 ch02=new Child02();
+		
+//		ch01.myMethod();
+//		ch02.myMethod();
+		
+		Parent myParent2 = new Child01();
+		myParent2.myMethod();
+		myParent2 = new Child02();	//Promotion 자동 타입 변환
+		myParent2.myMethod();
+
+
+	}
+
+}

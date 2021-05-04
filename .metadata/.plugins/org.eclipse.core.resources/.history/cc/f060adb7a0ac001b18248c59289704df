@@ -1,0 +1,8 @@
+package ch13;
+
+public class Product<T, M> {
+	private T kind;
+	private M model;
+	
+	
+}
