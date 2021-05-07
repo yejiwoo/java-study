@@ -1,5 +1,0 @@
-package sec02.p347;
-
-public class Searchable {
-	void search(String url);
-}
